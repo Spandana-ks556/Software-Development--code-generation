@@ -28,7 +28,7 @@ with st.sidebar:
 
 st.subheader("Enter your idea")
 prompt = st.text_area("Example: Build a chatbot app")
-
+Api_url= "https://your-backend-name.onrender.com/build"
 
 if st.button(" Build Application"):
 
@@ -52,7 +52,7 @@ if st.button(" Build Application"):
         
         with st.spinner("Agents are building your project..."):
             res = requests.post(
-                "http://localhost:8000/build",
+                Api_url,
                 json={"prompt": prompt}
             )
 
