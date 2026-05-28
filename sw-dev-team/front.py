@@ -28,7 +28,7 @@ with st.sidebar:
 
 st.subheader("Enter your idea")
 prompt = st.text_area("Example: Build a chatbot app")
-Api_url= "https://your-backend-name.onrender.com/build"
+Api_url= "https://software-developmentteam-simulator.onrender.com"
 
 if st.button(" Build Application"):
 
